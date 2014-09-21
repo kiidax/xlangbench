@@ -69,3 +69,5 @@ for i in range(4):
     end = time.time()
     print "time: %dms" % ((end - start) * 1000)
 # examine()
+
+exit(0)

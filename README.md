@@ -59,6 +59,11 @@ cumulative. So the fourth number is the time spent to process
 > g++ -O2 bench.cc -o bench_gcc
 > ./bench_gcc
 
+#### C++ for Linux clang
+
+> clang++ -O2 bench.cc -o bench_clang
+> ./bench_clang
+
 #### C++ for MinGW GCC
 
 > g++ -O2 bench.cc -o bench_mingw.exe
@@ -80,7 +85,7 @@ You need to build V8. Run
 
 > /path/to/v8/shell bench.js
 
-#### WebKit JavaScriptCore (JavaScript)
+#### Mozilla SpiderMonkey (JavaScript)
 
 > js bench.js
 
