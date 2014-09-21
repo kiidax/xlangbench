@@ -7,6 +7,10 @@ program reads data from the file and process them, then show the time
 spent. The programming is kept very simple so that adding a new
 language should not a pain.
 
+The benchmark is not a heavy numerical calculations like N-body,
+Mandelbrot or cryptography. This is because I would choose C++ without
+any benchmark results for such a program.
+
 The current supported languages are
 
 - C++
@@ -20,8 +24,8 @@ The current supported languages are
 Before you start benchmarking, you need to generate test data. It
 includes fake user information. To generate it, you need to get three
 files from
-[United States Census Bereau](http://www.census.gov/genealogy/www/data/1990surnames/names_files.html).
-They are frequently occurring names from U.S. Census 1990.
+[United States Census Bereau](http://www.census.gov/genealogy/www/data/1990surnames/names_files.html),
+frequently occurring names from U.S. Census 1990.
 
 - dist.all.last (3107965 bytes)
 - dist.female.first (149625 bytes)
@@ -51,39 +55,62 @@ cumulative. So the fourth number is the time spent to process
 
 #### C++ for Microsoft Visual C++
 
+```
 > cl /O2 /EHsc /Fe:bench_msvc.exe bench.cc
 > bench_msvc.exe
+```
 
 #### C++ for Linux GCC
 
-> g++ -O2 bench.cc -o bench_gcc
-> ./bench_gcc
+```
+$ g++ -O2 bench.cc -o bench_gcc
+$ ./bench_gcc
+```
+
+#### C++ for Linux clang
+
+```
+$ clang++ -O2 bench.cc -o bench_clang
+$ ./bench_clang
+```
 
 #### C++ for MinGW GCC
 
-> g++ -O2 bench.cc -o bench_mingw.exe
-> ./bench_mingw.exe
+```
+$ g++ -O2 bench.cc -o bench_mingw.exe
+$ ./bench_mingw.exe
+```
 
 #### C# for Windows
 
+```
 > csc /out:bench_cs.exe Bench.cs
 > bench_cs.exe
+```
 
 #### Java
 
-> javac Bench.java
-> java Bench
+```
+$ javac Bench.java
+$ java Bench
+```
 
 #### V8 (JavaScript)
 
 You need to build V8. Run
 
-> /path/to/v8/shell bench.js
+```
+$ /path/to/v8/shell bench.js
+```
 
-#### WebKit JavaScriptCore (JavaScript)
+#### Mozilla SpiderMonkey (JavaScript)
 
-> js bench.js
+```
+$ js bench.js
+```
 
 #### Python
 
-> python bench.py
+```
+$ python bench.py
+```

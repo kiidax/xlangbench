@@ -31,7 +31,7 @@ def load():
     index = 0
     file.readline() # Skip the first line.
     for line in file:
-        record = line.split(",")
+        record = line.rstrip().split(",")
         id = index_to_id(index);
         user = User(record[0], record[2])
         id_user_map[id] = user
@@ -68,4 +68,6 @@ for i in range(4):
     test()
     end = time.time()
     print "time: %dms" % ((end - start) * 1000)
-# examine()
+examine()
+
+exit(0)
