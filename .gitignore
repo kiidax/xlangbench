@@ -5,3 +5,4 @@
 /userdata.csv
 *.obj
 *.exe
+/*.class
