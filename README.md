@@ -7,6 +7,10 @@ program reads data from the file and process them, then show the time
 spent. The programming is kept very simple so that adding a new
 language should not a pain.
 
+The benchmark is not a heavy numerical calculations like N-body,
+Mandelbrot or cryptography. This is because I would choose C++ without
+any benchmark results for such a program.
+
 The current supported languages are
 
 - C++
