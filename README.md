@@ -51,44 +51,62 @@ cumulative. So the fourth number is the time spent to process
 
 #### C++ for Microsoft Visual C++
 
+```
 > cl /O2 /EHsc /Fe:bench_msvc.exe bench.cc
 > bench_msvc.exe
+```
 
 #### C++ for Linux GCC
 
-> g++ -O2 bench.cc -o bench_gcc
-> ./bench_gcc
+```
+$ g++ -O2 bench.cc -o bench_gcc
+$ ./bench_gcc
+```
 
 #### C++ for Linux clang
 
-> clang++ -O2 bench.cc -o bench_clang
-> ./bench_clang
+```
+$ clang++ -O2 bench.cc -o bench_clang
+$ ./bench_clang
+```
 
 #### C++ for MinGW GCC
 
-> g++ -O2 bench.cc -o bench_mingw.exe
-> ./bench_mingw.exe
+```
+$ g++ -O2 bench.cc -o bench_mingw.exe
+$ ./bench_mingw.exe
+```
 
 #### C# for Windows
 
+```
 > csc /out:bench_cs.exe Bench.cs
 > bench_cs.exe
+```
 
 #### Java
 
-> javac Bench.java
-> java Bench
+```
+$ javac Bench.java
+$ java Bench
+```
 
 #### V8 (JavaScript)
 
 You need to build V8. Run
 
-> /path/to/v8/shell bench.js
+```
+$ /path/to/v8/shell bench.js
+```
 
 #### Mozilla SpiderMonkey (JavaScript)
 
-> js bench.js
+```
+$ js bench.js
+```
 
 #### Python
 
-> python bench.py
+```
+$ python bench.py
+```
