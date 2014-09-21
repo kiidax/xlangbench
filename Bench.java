@@ -40,7 +40,7 @@ public class Bench {
     
     public void load() throws Exception {
         // No error check for brevity.
-        BufferedReader reader = new FileReader("userdata.csv");
+        BufferedReader reader = new BufferedReader(new FileReader("userdata.csv"));
         String line;
         int index = 0;
         while ((line = reader.readLine()) != null) {
