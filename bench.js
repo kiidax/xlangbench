@@ -29,12 +29,12 @@ function indexToId(index) {
 }
 
 function load() {
-    var jsonData = JSON.parse(read("dummy.json"));
-    
+    var buf = read("userdata.csv");
     var index = 0;
-    jsonData.forEach(function (record) {
+    buf.split(/[\r\n]+/).forEach(function (line) {
+	var record = line.split(/,/)
         var id = indexToId(index++);
-        idUserMap[id] = new User(record.name, record.email);
+        idUserMap[id] = new User(record[0], record[2]);
     });
     
     var numUsers = Object.keys(idUserMap).length;

@@ -2,7 +2,6 @@
 # Copyright (C) 2014 Katsuya Iida. All rights reserved.
 #
 
-import codecs
 import random
 import time
 
@@ -28,7 +27,7 @@ def index_to_id(index):
     return "id-%d" % index
         
 def load():
-    file = codecs.open("dummy.csv", "r", "shift-jis")
+    file = open("userdata.csv")
     index = 0
     file.readline() # Skip the first line.
     for line in file:

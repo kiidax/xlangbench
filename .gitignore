@@ -2,3 +2,6 @@
 /dist.female.first
 /dist.male.first
 /nam_meth.txt
+/userdata.csv
+*.obj
+*.exe

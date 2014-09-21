@@ -40,9 +40,7 @@ public class Bench {
     
     public void load() throws Exception {
         // No error check for brevity.
-        FileInputStream fis = new FileInputStream("dummy.csv");
-        InputStreamReader isr = new InputStreamReader(fis, "Windows-31J");
-        BufferedReader reader = new BufferedReader(isr);
+        BufferedReader reader = new FileReader("userdata.csv");
         String line;
         int index = 0;
         while ((line = reader.readLine()) != null) {

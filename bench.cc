@@ -50,7 +50,7 @@ string indexToId(int index)
 
 void load()
 {
-    ifstream ifs("dummy.csv");
+    ifstream ifs("userdata.csv");
     string line;
     getline(ifs, line); // Skip the first line.
     int index = 0;

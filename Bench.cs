@@ -33,7 +33,7 @@ public class Bench {
     public void Load()
     {
         // No error check for brevity.
-        string[] lines = System.IO.File.ReadAllLines(@"dummy.csv");
+        string[] lines = System.IO.File.ReadAllLines(@"userdata.csv");
         for (int index = 0; index < lines.Length; index++)
         {
             string[] record = lines[index].Split(',');
