@@ -20,8 +20,8 @@ The current supported languages are
 Before you start benchmarking, you need to generate test data. It
 includes fake user information. To generate it, you need to get three
 files from
-[United States Census Bereau](http://www.census.gov/genealogy/www/data/1990surnames/names_files.html).
-They are frequently occurring names from U.S. Census 1990.
+[United States Census Bereau](http://www.census.gov/genealogy/www/data/1990surnames/names_files.html),
+frequently occurring names from U.S. Census 1990.
 
 - dist.all.last (3107965 bytes)
 - dist.female.first (149625 bytes)
