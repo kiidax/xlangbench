@@ -126,6 +126,28 @@ start
 bench.js:16: out of memory
 ```
 
+#### Oracle Nashorn (JavaScript)
+
+```
+loading: 500000 test items
+start
+time: 9102
+time: 15511
+time: 25695
+time: 35488
+```
+
+#### Mozilla Rhino (JavaScript)
+
+```
+loading: 500000 test items
+start
+time: 10351
+time: 18540
+time: 25559
+time: 31505
+```
+
 #### Python 2.7.8 32 bit Windows
 
 ```

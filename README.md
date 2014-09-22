@@ -16,7 +16,7 @@ The current supported languages are
 - C++
 - C#
 - Java
-- JavaScript (V8)
+- JavaScript
 - Python
 - Scala
 
@@ -110,6 +110,18 @@ $ /path/to/v8/shell bench.js
 
 ```
 $ js bench.js
+```
+
+#### Oracle Nashorn (JavaScript)
+
+```
+$ jjs bench_nashorn.js
+```
+
+#### Mozilla Rhino (JavaScript)
+
+```
+$ jrunscript bench_nashorn.js
 ```
 
 #### Python
