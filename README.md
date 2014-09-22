@@ -18,6 +18,7 @@ The current supported languages are
 - Java
 - JavaScript (V8)
 - Python
+- Scala
 
 ## Preparation
 
@@ -33,7 +34,9 @@ frequently occurring names from U.S. Census 1990.
 
 Place them in the root directory of this package. Run
 
+```
 > python genfakeusers.py 5000 xlangbench > userdata.csv
+```
 
 The second argument is the random seed. It can be any string but need
 to be the same to generate the same data. With Python 2.7.8 on 32 bit
@@ -113,4 +116,11 @@ $ js bench.js
 
 ```
 $ python bench.py
+```
+
+#### Scala
+
+```
+$ scalac bench.scala
+$ scala -J-Xmx1G BenchScala
 ```

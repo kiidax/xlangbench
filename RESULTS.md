@@ -136,3 +136,14 @@ time: 4798ms
 time: 7251ms
 time: 9623ms
 ```
+
+#### Scala 2.11.2 on Oracle Java 1.8.0 64 bit Windows
+
+```
+Loading: 500000 test items
+start
+time: 2432.040664
+time: 5570.00373
+time: 9635.500601
+time: 12141.395275
+```

@@ -18,19 +18,20 @@ object BenchScala {
     
   println("Loading: " + DATA_SIZE + " test items")
   
+  def indexToId(index: Int) = "id-" + index
+  
   val idUserMap: Map[String, User] = {
     val lines = Source.fromFile("userdata.csv").getLines
-    var index = 0
-    (for (line <- lines) yield {
+    val users = for (line <- lines) yield {
       val record = line.split(',')
-      val user = new User(record(0), record(2))
-      val keyval = (indexToId(index) -> user)
-      index = index + 1
-      keyval
-    }).toMap
+      new User(record(0), record(2))
+    }
+    users.toList.zipWithIndex.map(((a: (User, Int)) => {
+      val (user, index) = a
+      val id = indexToId(index)
+      id -> user
+    })).toMap
   }
-  
-  def indexToId(index: Int) = "id-" + index
   
   val testDataList: Seq[TestData] = {
     val numUsers = idUserMap.size
@@ -65,6 +66,7 @@ object BenchScala {
   }
 
   def main(args: Array[String]) {
+    println("start")
     val start = java.lang.System.nanoTime()
     for (i <- 0 until 4) {
       test()
