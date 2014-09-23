@@ -66,6 +66,7 @@ object BenchScala {
   }
 
   def main(args: Array[String]) {
+    System.gc()
     println("start")
     val start = java.lang.System.nanoTime()
     for (i <- 0 until 4) {

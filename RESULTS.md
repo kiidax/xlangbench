@@ -68,10 +68,10 @@ time: 10453ms
 ```
 loading: 500000 test items
 start
-time: 3565.69983ms
-time: 6610.798928ms
-time: 9301.112781ms
-time: 12324.496409ms
+time: 2967.122288ms
+time: 6018.403875ms
+time: 8685.964348ms
+time: 11191.996399ms
 ```
 
 #### OpenJDK 1.7.0 64 bit on Fedora 20
@@ -164,8 +164,8 @@ time: 9623ms
 ```
 Loading: 500000 test items
 start
-time: 2432.040664
-time: 5570.00373
-time: 9635.500601
-time: 12141.395275
+time: 2704.619721
+time: 6889.334119
+time: 11583.168182
+time: 15339.895015
 ```

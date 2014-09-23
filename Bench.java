@@ -86,8 +86,9 @@ public class Bench {
     public void run() throws Exception {
         System.out.println("loading: " + TEST_SIZE + " test items");
         load();
-        long start = System.nanoTime();
+        System.gc();
         System.out.println("start");
+        long start = System.nanoTime();
         for (int i = 0; i < 4; i++) {
             test();
             long end = System.nanoTime();

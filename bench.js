@@ -32,7 +32,7 @@ function load() {
     var buf = read("userdata.csv");
     var index = 0;
     buf.split(/[\r\n]+/).forEach(function (line) {
-	var record = line.split(/,/)
+        var record = line.split(/,/);
         var id = indexToId(index++);
         idUserMap[id] = new User(record[0], record[2]);
     });
