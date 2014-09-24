@@ -148,6 +148,17 @@ time: 25559
 time: 31505
 ```
 
+#### Lua 5.2.3
+
+```
+loading 500000 test items
+start
+time: 2.344
+time: 5.08
+time: 7.474
+time: 10
+````
+
 #### Python 2.7.8 32 bit Windows
 
 ```

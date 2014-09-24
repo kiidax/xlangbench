@@ -17,6 +17,7 @@ The current supported languages are
 - C#
 - Java
 - JavaScript
+- Lua
 - Python
 - Scala
 
@@ -122,6 +123,12 @@ $ jjs bench_nashorn.js
 
 ```
 $ jrunscript bench_nashorn.js
+```
+
+#### Lua
+
+```
+$ lua bench.lua
 ```
 
 #### Python
