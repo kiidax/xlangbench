@@ -118,12 +118,15 @@ time: 8228
 time: 15761
 ```
 
-#### Mozilla SpiderMonkey (JavaScript) on Fedora 20
+#### Mozilla SpiderMonkey 24.2.0 (JavaScript) on Fedora 20
 
 ```
 loading: 500000 test items
 start
-bench.js:16: out of memory
+time: 2073
+time: 4504
+time: 6502
+time: 8446
 ```
 
 #### Oracle Nashorn (JavaScript)
