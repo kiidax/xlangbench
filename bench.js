@@ -14,7 +14,7 @@ function User(name, email) {
 
 User.prototype.toString = function () {
     return this.name + " <" + this.email + ">";
-}
+};
 
 function TestData(fromId, toId) {
     this.fromId = fromId;
